@@ -13,8 +13,8 @@ go: updates to go.mod needed; to update it:
 The GopherJS build failed under the condition:
 - Go 1.21.0 installed under the `$PATH`
 - `gopherjs build` module targets a version earlier than 1.21.0
-  - In this example, `main` module targets `go 1.18`
-- Imported package targets `go 1.21.0`
+  - In this example, `main` module targets `go 1.18` in `go.mod`
+- Imported package targets `go 1.21.0` in `go.mod`
   - Imported `submod` package targets `go 1.21.0`
   - It can be compiled with Go 1.18.10
 
